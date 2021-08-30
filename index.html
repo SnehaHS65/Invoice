@@ -1,0 +1,103 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Invoice</h1>
+			<address contenteditable>
+				<p style="font-weight: bold;">FROM :</p><br>
+				<p>Sneha H S,<br></p>
+				<p>226,RK Nagar,</p>
+				<select name = "states">
+                    <option value="">State</option><br>
+                    <option value ="Andra Pradesh">Andra Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Maharastra">Maharastra</option>
+                    
+                </select><br><br><br>
+
+				<p style="font-weight: bold;">TO : </p><br>
+				<p>Jonathan Neal</p>
+				<p>101 E. Chapman Ave</p>
+				<select name = "states">
+                    <option value="">State</option><br>
+                    <option value ="Andra Pradesh">Andra Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Maharastra">Maharastra</option>
+                    
+                </select><br><br><br>
+
+			</address>
+			<img alt="" src="amazon_logo.png" width="200px" height="100px" style="float: right;" >
+			
+			
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<address contenteditable>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span>Invoice #</span></th>
+					<td><span contenteditable>101138</span></td>
+				</tr>
+				<tr>
+					<th><span>Date</span></th>
+					<td><span contenteditable>January 1, 2012</span></td>
+				</tr>
+				<tr>
+					<th><span>Amount Due</span></th>
+					<td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span>Item</span></th>
+						<th><span>Description</span></th>
+						<th><span>Rate</span></th>
+						<th><span>Quantity</span></th>
+						<th><span>Price</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a class="cut">-</a><span contenteditable>Front End Consultation</span></td>
+						<td><span contenteditable>Experience Review</span></td>
+						<td><span data-prefix>$</span><span contenteditable>150.00</span></td>
+						<td><span contenteditable>4</span></td>
+						<td><span data-prefix>$</span><span>600.00</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="add">+</a>
+			<table class="balance">
+				<tr>
+					<th><span>Total</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+				<tr>
+					<th><span>Amount Paid</span></th>
+					<td><span data-prefix>$</span><span contenteditable>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span>Balance Due</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+		</article>
+		
+	</body>
+</html>
